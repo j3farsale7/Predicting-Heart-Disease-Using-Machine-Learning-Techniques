@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>815</width>
+    <height>660</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ECG Checker</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="ecgImage">
+    <property name="geometry">
+        <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>600</width>
+            <height>600</height>
+        </rect>
+    </property>
+    <property name="scaledContents">
+        <bool>true</bool>
+    </property>
+</widget>
+   <widget class="QLabel" name="logo">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>10</y>
+      <width>200</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="scaledContents">
+        <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="sampleInput">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>620</y>
+      <width>100</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="checkButton">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>620</y>
+      <width>100</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Check</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="resultLabel">
+    <property name="geometry">
+        <rect>
+            <x>620</x>
+            <y>285</y> <!-- 210 (logo's y + height) + 75 -->
+            <width>180</width>
+            <height>100</height>
+        </rect>
+    </property>
+    <property name="font">
+        <font>
+            <pointsize>36</pointsize> <!-- Adjust the size as needed -->
+            <bold>true</bold>
+        </font>
+    </property>
+    <property name="alignment">
+        <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+        <bool>true</bool>
+    </property>
+</widget>
+   <widget class="QPushButton" name="resetButton">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>620</y>
+      <width>100</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Reset</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
